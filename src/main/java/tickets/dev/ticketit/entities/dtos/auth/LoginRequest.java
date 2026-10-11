@@ -2,7 +2,6 @@ package tickets.dev.ticketit.entities.dtos.auth;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-
 //Java records are ideal for DTOs because DTOs are mainly used to transfer data between application layers
 //without needing to modify it.
 // Records automatically generate constructors, getters (accessor methods),
@@ -19,4 +18,4 @@ public record LoginRequest(
         @NotBlank(message = "Password is required")
         String password
 
-) {}
+) { }
